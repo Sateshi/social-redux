@@ -1,0 +1,63 @@
+aside{
+    background-color: rgb(248, 250, 252);
+    height: 97%;
+    width: 18%;
+    border-radius: 5px;
+    padding: 10px 14px;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.side-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.user-info{
+    display: flex;
+    margin-bottom: 10%;
+    height: 6%;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-text p{
+    margin: 0;
+}
+
+.user-name{
+    font-weight: bold;
+}
+
+.user-status{
+    font-size: 0.8em;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    height: 100%;
+}
+
+.profile-picture{
+    max-width: 20%;
+    border-radius: 5px;
+}
+
+.menu-item{
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.2s ease-out;
+}
+
+.menu-item:hover{
+    background-color: blueviolet;
+    color: whitesmoke;
+    cursor: pointer;
+}

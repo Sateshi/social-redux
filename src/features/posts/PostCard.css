@@ -1,0 +1,11 @@
+.post{
+    border-radius: 5px;
+    padding: 10px 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(212, 220, 227);
+    transition: 0.2s ease-in-out;
+}
+
+.post:hover{
+    background-color: rgb(197, 203, 209);
+}
