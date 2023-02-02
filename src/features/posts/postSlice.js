@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
-    {title: "Ceci est un post", content: "Je suis le texte du post"},
-    {title: "Ad eternum astra", content:"One-winged angel"}
+    {id: 1, title: "Ceci est un post", content: "Je suis le texte du post"},
+    {id: 2,title: "Ad eternum astra", content:"One-winged angel"}
 ]
 
 export const postSlice = createSlice({

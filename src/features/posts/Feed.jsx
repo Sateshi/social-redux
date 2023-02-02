@@ -11,15 +11,15 @@ function Feed(){
 
     const handleSubmit = (e) => {
         let error = [];
-
         e.preventDefault()
         if(!e.target[0].value)
             error.push("Please fill in the title");
         if(!e.target[1].value)
             error.push("Please fill in the text");
         setErrorMessage(error);
-        if(!error){
+        if(error.length === 0){
             dispatch(addPost({
+                id: posts.length +1,
                 title: e.target[0].value,
                 content: e.target[1].value
             }))
@@ -27,7 +27,7 @@ function Feed(){
             e.target[1].value = "";
         }
     }
-    
+
     return(
         <>
             <div className="feed">
@@ -42,8 +42,8 @@ function Feed(){
                 <input type="text" placeholder="Votre message" />
                 <input type="submit" value="SUBMIT" className="submit-input" />
             </form>
-                {posts.map((item,index) => {
-                    return <PostCard title={item.title} content={item.content} key={index} />
+                {posts.map((item) => {
+                    return <PostCard title={item.title} content={item.content} key={item.id} />
                 })}
             </div>
         </>
